@@ -20,7 +20,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
         <button onClick={(e) => auth.signinWithGithub()}>Sign In</button>
-        <div>{auth?.user?.email}</div>
+        <div>{auth?.user?.email} is email</div>
         {auth?.user && (
           <button onClick={(e) => auth.signout()}>Sign out</button>
         )}
@@ -32,7 +32,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by{"  "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
